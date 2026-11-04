@@ -1,0 +1,56 @@
+{
+  "enable": {
+    "description": "启用表情暂存",
+    "type": "bool",
+    "default": true,
+    "hint": "关闭后不做任何拦截，表情消息按普通消息处理。"
+  },
+  "ttl_seconds": {
+    "description": "暂存有效期（秒）",
+    "type": "int",
+    "default": 120,
+    "hint": "只发表情后，在该时间内发来的文字会带上情绪背景；超时自动失效。建议 60~300。"
+  },
+  "profile_min_samples": {
+    "description": "画像注入门槛（样本数）",
+    "type": "int",
+    "default": 5,
+    "hint": "同一用户的累计表情样本达到该数量后，才会在回复里带上「此人表达习惯」的提示。"
+  },
+  "max_pending_per_user": {
+    "description": "每用户最多暂存几个表情",
+    "type": "int",
+    "default": 4,
+    "hint": "连续发表情时只保留最近 N 个情绪，避免堆叠成噪音。"
+  },
+  "private_enable": {
+    "description": "私聊也生效",
+    "type": "bool",
+    "default": true,
+    "hint": "关闭后只对群聊生效。"
+  },
+  "group_whitelist": {
+    "description": "只在这些群生效（群号）",
+    "type": "list",
+    "default": [],
+    "hint": "留空表示所有群；填了则只处理列表内的群。"
+  },
+  "group_blacklist": {
+    "description": "这些群不生效（群号）",
+    "type": "list",
+    "default": [],
+    "hint": "优先级高于白名单。"
+  },
+  "unknown_label": {
+    "description": "无法识别的表情标签",
+    "type": "string",
+    "default": "情绪不明",
+    "hint": "映射表里没有的表情一律用这个标签，不臆测情绪。"
+  },
+  "show_hint_to_user": {
+    "description": "把情绪判断回显给用户",
+    "type": "bool",
+    "default": false,
+    "hint": "调试用：开启后回复末尾会附上本次识别到的情绪与暂存时长。"
+  }
+}

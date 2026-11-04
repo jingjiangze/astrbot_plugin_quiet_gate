@@ -1,0 +1,13 @@
+name: astrbot_plugin_quiet_gate
+display_name: 表情暂存 · Emoji Hold
+desc: 只发表情时不回复、先暂存情绪；等同一用户 TTL 内发来文字，再把情绪作为背景注入回复；超时自动失效；按用户累计表情情绪画像。
+version: 3.0.0
+author: jingjiangze
+repo: https://github.com/jingjiangze/astrbot_plugin_quiet_gate
+short_desc: 表情当情绪、不当信息
+astrbot_version: ">=4.29.0"
+tags:
+  - 消息处理
+  - 表情
+  - 情绪
+  - 拟人

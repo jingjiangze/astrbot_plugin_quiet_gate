@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.tmp
+.pytest_cache/
+plugin_data/
+pending.json
+profile.json
