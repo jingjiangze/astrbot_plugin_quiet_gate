@@ -3,7 +3,7 @@
 > **表情是情绪，不是信息。**
 > 只发表情时先按住不说，等对方把话说完，再带着那股情绪回。
 
-AstrBot 插件 · 需要 `astrbot >= 4.29.0` · MIT
+AstrBot 插件 · 需要 `astrbot >= 4.29.0` · GPL-3.0-or-later
 
 ---
 
@@ -176,4 +176,4 @@ python -m unittest discover -s tests -v
 
 ## License
 
-MIT
+**GPL-3.0-or-later** — 全文见 [`LICENSE`](LICENSE)。可自由使用与修改；分发衍生作品须同样以 GPL-3.0-or-later 开源并提供源代码。
